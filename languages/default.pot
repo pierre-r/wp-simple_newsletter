@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Newsletter\n"
+"POT-Creation-Date: 2012-10-24 12:10+0100\n"
+"PO-Revision-Date: 2012-10-24 12:10+0100\n"
+"Last-Translator: Pierre <pierre@greenpig.be>\n"
+"Language-Team: Greenpig <info@greenpig.be>\n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x/n;esc_attr__;"
+"esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: D:\\xampp\\htdocs\\boone-devinck.be\\wp-content"
+"\\plugins\\simple_newsletter\n"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-actions.php:16
+msgid "Invalid email address"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:14
+msgid "Newsletter Subscribe"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:22
+msgid "Subscribe to newsletter successful!"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:32
+msgid "Widget to show a subscribe form in your sidebar."
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:34
+msgid "Simple Newsletter"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:62
+msgid "Subscribe"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:67
+msgid "Title"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:68
+msgid "Form ID"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:69
+msgid "Form classes"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:70
+msgid "Submit button"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:71
+msgid "Show on front page"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:72
+msgid "Do not consider as widget"
+msgstr ""

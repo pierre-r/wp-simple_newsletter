@@ -1,0 +1,271 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Newsletter\n"
+"POT-Creation-Date: 2012-10-29 08:44+0100\n"
+"PO-Revision-Date: 2012-10-29 08:45+0100\n"
+"Last-Translator: Pierre <pierre@greenpig.be>\n"
+"Language-Team: Greenpig <info@greenpig.be>\n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x/n;esc_attr__;"
+"esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: D:\\xampp\\htdocs\\boone-devinck.be\\wp-content"
+"\\plugins\\simple_newsletter\n"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-actions.php:18
+msgid "Invalid email address"
+msgstr "Adresse email invalide"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-admin.php:5
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-admin.php:12
+msgid "Manage newsletter subscriptions"
+msgstr "Gestion des inscriptions à la newsletter"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-admin.php:14
+msgid "Subscribers list"
+msgstr "Liste des abonnés"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-admin.php:16
+msgid "Unsubscribers list"
+msgstr "Liste des désabonnés"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-admin.php:18
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:32
+msgid "Export"
+msgstr "Exporter"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-admin.php:20
+msgid "Documentation"
+msgstr "Documentation"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-functions.php:29
+msgid "Total unsubscribers:"
+msgstr "Total des abonnées"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-functions.php:31
+msgid "Total subscribers:"
+msgstr "Total des abonnées"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-functions.php:36
+#, php-format
+msgid "Show %d users per page"
+msgstr "Afficher %d utilisateurs par page"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-functions.php:58
+msgid "show all"
+msgstr "tout afficher"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-functions.php:60
+#, php-format
+msgid "Displaying %s&#8211;%s of %s"
+msgstr "Affichage de %s&#8211;%s sur %s"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:15
+msgid "Subscribe"
+msgstr "Inscription"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:28
+msgid "Thank you for your subscription :)"
+msgstr "Merci pour votre inscription :)"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:45
+msgid "Newsletter Subscribe"
+msgstr "Inscription Newsletter"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:57
+msgid "Widget to show a subscribe form in your sidebar."
+msgstr "Widget pour afficher un formulaire d'inscription dans votre sidebar."
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:59
+msgid "Simple Newsletter"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:86
+msgid "Title"
+msgstr "Titre"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:87
+msgid "Form ID"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:88
+msgid "Form classes"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:89
+msgid "Error class"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:90
+msgid "Success class"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:91
+msgid "Submit button"
+msgstr "Bouton d'envoi"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:92
+msgid "Show on front page"
+msgstr "Afficher sur la front page"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:93
+msgid "Do not consider as widget"
+msgstr "Ne pas considérer comme un widget"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/wpsn-widget.php:94
+msgid "Show error and success in JS alert()"
+msgstr "Afficher les erreurs/réussite dans un alert() JS"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:2
+msgid "How to use"
+msgstr "Utilisation"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:3
+msgid ""
+"You have two main possibilities to use : by widget or by direct call for "
+"theme integration"
+msgstr ""
+"Vous avec deux principales façon de l'utiliser : par le widget ou par appel "
+"direct pour l'intégration dans les thèmes"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:4
+msgid ""
+"For the first solution, simply go to <a href=\"widgets.php\">Widgets page "
+"options</a> and set the differentions option for Simple Newsletter Wdiget."
+msgstr ""
+"Pour la première solution, allez simplement sur la <a href=\"widgets.php"
+"\">Page des Widgets</a> et définissez les différentes options pour le widget "
+"Simple Newsletter."
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:5
+msgid "Theme Integration"
+msgstr "Intégration dans les  thèmes"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:6
+msgid ""
+"You can choose to integer the subscription form anyway by calling it "
+"directly. There are default options but it is best to set the differents "
+"options."
+msgstr ""
+"Vous pouvez choisir d'intégrer le formulaire d'inscription n'importe où en "
+"l'appellant directement. Il existe des options par défaut mais il est "
+"préférable de définir soi-même les options."
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:7
+msgid "Here are the default options and a call of the function."
+msgstr "Voici les options par défaut et l'appel à la fonction."
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:24
+msgid "TODO"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:26
+msgid ""
+"Add attribute who check if form is called in widget or directly => a simple "
+"way to bypass the <code>show_on_front_page</code> option."
+msgstr ""
+"Ajouter un attribut afin de véirifer le si la fonction est appellée dans un "
+"widget ou directement => une façon simple d'outrepasser l'option "
+"<code>show_on_front_page</code>"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:27
+msgid ""
+"Add a option to return only the subscription value (fail or success) to let "
+"the theme manage the display of error/success (a better Error Handling and "
+"less options)"
+msgstr ""
+"Ajouter une option afin de retourner simplement la valeur de l'inscription "
+"(echec ou réussite) afin de laisser le theme gérer l'affichage du retour "
+"(meilleure gestion des erreurs et moins d'options)"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/documentation.php:28
+msgid ""
+"Add Bulk Actions to switch subscribers to unsubscribers and vice-versa + "
+"delete action"
+msgstr ""
+"Ajouter des actions globales pour pouvoir passer les inscrits en désabonnés "
+"et vice-versa + action supprimer"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:2
+msgid "Export Options"
+msgstr "Options d'exportation"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:6
+msgid "Users type"
+msgstr "Type d'utilisateurs"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:8
+msgid "Subscribers"
+msgstr "Abonnés"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:9
+msgid "Unsubscribers"
+msgstr "Désabonnés"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:10
+msgid "All"
+msgstr "Tous"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:13
+msgid "Data format"
+msgstr "Format des données"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:24
+msgid "Output"
+msgstr "Sortie"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:26
+msgid "Show results"
+msgstr "Afficher les résultats"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:27
+msgid "Save in a file"
+msgstr "Sauvegarder dans un fichier"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/export.php:46
+msgid "Results"
+msgstr "Résultats"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/subscribers_list_table.php:28
+msgid "ID"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/subscribers_list_table.php:29
+msgid "Email"
+msgstr ""
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/subscribers_list_table.php:30
+msgid "Language"
+msgstr "Langue"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/subscribers_list_table.php:31
+msgid "Date Subscription"
+msgstr "Date d'abonnement"
+
+#: D:\xampp\htdocs\boone-devinck.be\wp-content\plugins\simple_newsletter/sub/subscribers_list_table.php:34
+msgid "Date Unsubscribe"
+msgstr "Date de désabonnement"
+
+#~ msgid "Subscribe to newsletter successful!"
+#~ msgstr "Inscription à la newsletter avec succès !"
+
+#~ msgid "No unsubscribers :)"
+#~ msgstr "Pas de désabonnés :)"
+
+#~ msgid "No subscribers :("
+#~ msgstr "Pas d'abonnés :("
+
+#~ msgid "Export Unsubscribers"
+#~ msgstr "Exporter les désabonnées"
+
+#~ msgid "Export Subscribers"
+#~ msgstr "Exporter les abonnés"
+
+#~ msgid "TXT (comma separated)"
+#~ msgstr "TXT (séparés par des virgules)"
