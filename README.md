@@ -1,0 +1,2 @@
+wp-simple_newsletter
+====================
