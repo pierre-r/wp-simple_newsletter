@@ -21,6 +21,9 @@ function simple_newsletter_admin_page() {
 
         <div class="icl_tm_wrap">
             <?php
+            if (!isset($_GET['sm']) || empty($_GET['sm'])) {
+                $_GET['sm'] = 'dashboard';
+            }
             switch ($_GET['sm']) {
                 case 'export':
                     require_once dirname(__FILE__) . '/sub/export.php';

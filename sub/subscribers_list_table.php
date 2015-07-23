@@ -27,6 +27,9 @@ class Subscribers_List_Table extends WP_List_Table {
         $columns = array(
             'id' => __('ID'),
             'email' => __('Email'),
+            'last_name' => __('Nom', 'wpsn'),
+            'first_name' => __('Prénom', 'wpsn'),
+            'entreprise_name' => __('Entreprise', 'wpsn'),
             'lang' => __('Language', 'wpsn'),
             'subscribe_date' => __('Date Subscription', 'wpsn'),
         );
@@ -42,8 +45,11 @@ class Subscribers_List_Table extends WP_List_Table {
      */
     public function get_sortable_columns() {
         $sortable_columns = array(
-            'id' => array('id', false),
+            'ID' => array('ID', false),
             'email' => array('email', false),
+            'last_name' => array('last_name', false),
+            'first_name' => array('first_name', false),
+            'entreprise_name' => array('entreprise_name', false),
             'lang' => array('lang', false),
             'subscribe_date' => array('subscribe_date', false),
             'unsubscribe_date' => array('unsubscribe_date', false),
@@ -55,6 +61,9 @@ class Subscribers_List_Table extends WP_List_Table {
         switch ($column_name) {
             case 'id':
             case 'email':
+            case 'last_name':
+            case 'first_name':
+            case 'entreprise_name':
             case 'lang':
             case 'subscribe_date':
             case 'unsubscribe_date':
@@ -143,7 +152,7 @@ class Subscribers_List_Table extends WP_List_Table {
             foreach ($records as $rec) {
 
                 //Open the line
-                echo '<tr id="record_' . $rec->link_id . '">';
+                echo '<tr id="record_' . $rec->ID . '">';
                 foreach ($columns as $column_name => $column_display_name) {
 
                     //Style attributes for each col
@@ -153,17 +162,13 @@ class Subscribers_List_Table extends WP_List_Table {
                         $style = ' style="display:none;"';
                     $attributes = $class . $style;
 
-                    //edit link
-                    $editlink = '/wp-admin/link.php?action=edit&link_id=' . (int) $rec->link_id;
-
                     //Display the cell
-                    $col = str_replace('', '', $column_name);
                     switch ($column_name) {
                         case "email":
-                            echo '<td ' . $attributes . ' style="width:50%;"><strong>' . $rec->$col . '</strong></td>';
+                            echo '<td ' . $attributes . ' style="width:50%;"><strong>' . $rec->$column_name . '</strong></td>';
                             break;
                         default:
-                            echo '<td ' . $attributes . '>' . $rec->$col . '</td>';
+                            echo '<td ' . $attributes . '>' . $rec->$column_name . '</td>';
                             break;
                     }
                 }
