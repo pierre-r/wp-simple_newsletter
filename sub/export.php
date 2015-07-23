@@ -34,14 +34,14 @@
 <?php
 if (isset($_GET['action']) && $_GET['action'] === "export_files") {
     global $wpdb;
-    $sqlWhere = "";
+    $sqlWhere = "%d";
+    $sqlData = array("1");
     if ($_GET['user_type'] !== 'all') {
-        //$sqlWhere = ($_GET['user_type'] === 'unsubs') ? " WHERE unsubscribed = '0' " : "";
-        $unsubscribed = (int) ($_GET['user_type'] === 'unsubs');
-        $sqlWhere = " WHERE unsubscribed = '" . $unsubscribed . "'";
+        $sqlData = array((int) ($_GET['user_type'] === 'unsubs'));
+        $sqlWhere = "unsubscribed = %d";
     }
-    $sql = "SELECT * FROM " . $wpdb->prefix . "simple_newsletter" . $sqlWhere;
-    $sql_data = $wpdb->get_results($sql);
+    $sql = "SELECT * FROM " . $wpdb->prefix . "simple_newsletter WHERE " . $sqlWhere;
+    $sql_data = $wpdb->get_results($wpdb->prepare($sql, $sqlData));
     $formated_data = wpsn_data_format($sql_data, $_GET['data_format']);
     echo '<h3>' . __('Results', 'wpsn') . '</h3><textarea style="width:100%;" rows="30">' . $formated_data . "</textarea>";
 }
