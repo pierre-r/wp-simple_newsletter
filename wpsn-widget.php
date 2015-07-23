@@ -11,16 +11,18 @@ $wpsn_subscribe_form_default_atts = array(
     'show_on_front_page' => 1,
     'do_not_widget' => 0,
     'form_id' => 'simple_newsletter',
-    'form_classes' => '',
+    'form_classes' => 'form-inline',
+    'inputs_classes' => 'form-control',
+    'submit_classes' => 'btn btn-primary',
     'submit_value' => __('Subscribe', 'wpsn'),
     'javascript_alert' => FALSE,
-    'error_classes' => 'alert alert-error',
+    'error_classes' => 'alert alert-danger',
     'success_classes' => 'alert alert-success',
 );
 
 function wpsn_subscribe_form($atts = array()) {
     global $wpsn_form_error;
-    $atts = wp_parse_args($atts, $GLOBALS['$wpsn_subscribe_form_default_atts']);
+    $atts = wp_parse_args($atts, $GLOBALS['wpsn_subscribe_form_default_atts']);
     extract($atts);
     $output = "";
     $output_error = "";
@@ -36,17 +38,29 @@ function wpsn_subscribe_form($atts = array()) {
                             }, 100 );
                     </script>';
         } else {
-            $className = ($wpsn_form_error) ? $atts['error_classes'] : $atts['success_classes'];
-            $output_error .= '<div class="' . $className . '">' . $wpsn_display_message . '</div>';
+            $output_error .= wpsn_display_message($atts);
         }
     }
     $output .= '<form class="' . $form_classes . '" id="' . $form_id . '" action="" method="post">
         ' . $output_error . '
-                    <input type="text" name="simple_newsletter_email" placeholder="' . __('Newsletter Subscribe', 'wpsn') . '">
+                    <input type="text" name="simple_newsletter_email" class="' . $inputs_classes . '" placeholder="' . __('Newsletter Subscribe', 'wpsn') . '">
                     <input type="hidden" name="action" value="simple_newsletter_register" />
-                    <button type="submit" class="submit">' . $submit_value . '</button>
+                    <button type="submit" class="' . $submit_classes . '">' . $submit_value . '</button>
                 </form>';
     return $output;
+}
+
+function wpsn_display_message($atts = array()) {
+    global $wpsn_form_error, $wpsn_display_message;
+    $ret = "";
+    if (isset($_POST['action']) && $_POST['action'] == 'simple_newsletter_register') {
+        $atts = wp_parse_args($atts, $GLOBALS['wpsn_subscribe_form_default_atts']);
+        extract($atts);
+        $wpsn_display_message = ($wpsn_form_error) ? $wpsn_form_error : __('Thank you for your subscription :)', 'wpsn');
+        $className = ($wpsn_form_error) ? $atts['error_classes'] : $atts['success_classes'];
+        $ret = '<div class="' . $className . '">' . $wpsn_display_message . '</div>';
+    }
+    return $ret;
 }
 
 class wpsn_widget extends WP_Widget {
@@ -78,7 +92,7 @@ class wpsn_widget extends WP_Widget {
     }
 
     public function form($instance) {
-        $instance = wp_parse_args($instance, $GLOBALS['$wpsn_subscribe_form_default_atts']);
+        $instance = wp_parse_args($instance, $GLOBALS['wpsn_subscribe_form_default_atts']);
         $show_on_front_page = ($instance['show_on_front_page']) ? ' checked="checked"' : '';
         $do_not_widget = ($instance['do_not_widget']) ? ' checked="checked"' : '';
         $javascript_alert = ($instance['javascript_alert']) ? ' checked="checked"' : '';

@@ -8,7 +8,6 @@
   Author URI: http://www.greenpig.be
  */
 
-// Create database table on activation
 register_activation_hook(__FILE__, 'simple_newsletter_install');
 
 function simple_newsletter_install() {
@@ -30,7 +29,6 @@ function simple_newsletter_install() {
 
 // Includes
 require_once(dirname(__FILE__) . '/wpsn-functions.php');
-require_once(dirname(__FILE__) . '/wpsn-install.php');
 require_once(dirname(__FILE__) . '/wpsn-actions.php');
 require_once(dirname(__FILE__) . '/wpsn-widget.php');
 require_once(dirname(__FILE__) . '/wpsn-admin.php');

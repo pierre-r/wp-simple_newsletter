@@ -12,10 +12,12 @@ $form_atts = array(
             'show_on_front_page' => 1,
             'do_not_widget' => 0,
             'form_id' => 'simple_newsletter',
-            'form_classes' => '',
+            'form_classes' => 'form-inline',
+            'inputs_classes' => 'form-control',
+            'submit_classes' => 'btn btn-primary',
             'submit_value' => __('Subscribe', 'wpsn'),
             'javascript_alert' => FALSE,
-            'error_classes' => 'alert alert-error',
+            'error_classes' => 'alert alert-danger',
             'success_classes' => 'alert alert-success',
         );
 echo wpsn_subscribe_form($form_atts);
